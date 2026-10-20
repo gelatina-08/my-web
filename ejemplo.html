@@ -1,0 +1,35 @@
+<!doctype html> 
+<html>
+  <head>
+    <title>Mi web</title>
+</head>
+<body>
+<style>
+  h1 {
+    color: #2563eb;
+  }
+  
+  button {
+    background: #7547c7;
+    color: white;
+  }
+  #mensaje{
+         color:blue;
+  }
+</style>
+  <h1>El viaje de mi dominio</h1>
+  <p>DNS transforma un nombre en una direccion.</p>
+  <button id="resolver">Resolver dominio</button>
+  <p id="mensaje">Esperando...</p>
+  <script>
+  var boton = document.querySelector("#resolver");
+  var mensaje = document.querySelector("#mensaje");
+
+  boton.addEventListener("click", function () {
+   mensaje.textContent = "IP: 203.0.113.25";
+  });
+   </script>
+  </body>
+</html>
+
+
